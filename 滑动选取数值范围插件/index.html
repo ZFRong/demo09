@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>滑动选取数值范围插件</title>
+<meta name="keywords" content="jquery,滑动" />
+<style type="text/css">
+.demo{width:600px; margin:60px auto 10px auto}
+</style>
+<script type="text/javascript" src="http://libs.useso.com/js/jquery/1.7.2/jquery.min.js"></script>
+<link rel="stylesheet" href="css/jquery.range.css">
+<script src="js/jquery.range.js"></script>
+
+</head>
+
+<body>
+	
+
+
+
+   
+	<div class="demo">
+		<input class="range-slider" type="hidden" value="25,75"/>
+	</div>
+
+  <script>
+$(function(){
+	$('.range-slider').jRange({
+		from: 0,
+		to: 100,
+		step: 1,
+		format: '%s',
+		width: 300,
+		showLabels: true,
+		isRange : true
+	});
+/*	
+	$("#g1").click(function(){
+		var aa = $(".single-slider").val();
+		alert(aa);
+	});
+	$("#g2").click(function(){
+		var aa = $(".range-slider").val();
+		alert(aa);
+	});*/
+});
+</script> 
+</body>
+</html>
